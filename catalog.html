@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Booksworld</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Web Font Core CSS -->
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Animate Core CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Owl Carousel Core CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Developer Custom CSS -->
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+
+	<!-- Start Project Code  -->
+	
+	<div id="menu-sidenav" class="menu-sidenav">
+		<a class="closebtn" onclick="closemenuSidenav()">&times;</a>
+		<div class="sidenav-menu-link">
+			<h5>Shop By</h5>
+			<ul>
+				<li><a href="">home</a></li>
+				<li><a href="">shirt</a></li>
+				<li>
+					<a data-toggle="collapse" href="#second-category">
+						t-shirt <span class="fa fa-angle-right"></span>
+					</a>
+					<div id="second-category" class="collapse">
+						<ul>
+							<li>
+								<a data-toggle="collapse" href="#third-category">
+									NEW T-SHIRT <span class="fa fa-angle-right"></span>
+								</a>
+								<div id="third-category" class="collapse">
+									<ul>
+										<li><a href="#">Normal Shirt</a></li>
+										<li><a href="#">Formal Shirt</a></li>
+										<li><a href="#">Punjabi</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">GONJI STAMP</a></li>
+							<li><a href="#">IDENTITY CRISIS</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><i class="fa fa-shopping-bag"></i> my cart</a></li>
+				<li><a href=""><i class="fa fa-check-circle"></i> checkout</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-account">
+			<ul>
+				<li><a href="#">Terms and Condition</a></li>
+				<li><a href="#"><span class="fa fa-user-circle"></span> Reister</a></li>
+				<li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-social">
+			<ul>
+				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+				<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+				<li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Start Header Section -->
+	<div class="header" id="header">
+		<div class="top-nav hidden-xs">
+			<div class="section-content">
+				<div class="top-left-link pull-left">
+					<span><i class="icofont icofont-phone"></i> 01675600270</span>&nbsp;&nbsp;
+					<span><i class="icofont icofont-email"></i> info@booksworld.com</span>
+				</div>
+				<div class="top-right-link pull-right">
+					<ul>
+						<li><a href="">help</a></li>
+						<li><a href="">track order</a></li>
+						<li>
+							<a href="">sign up</a> <span>|</span>
+							<a href="">login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="middle-nav">
+			<div class="section-content">
+				<div class="row">
+					<div class="col-xs-2 visible-xs">
+						<div class="mobile-menu">
+							<a onclick="openmenuSidenav()">
+								<i class="icofont icofont-navigation-menu"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-7">
+						<div class="logo">
+							<a href="">
+								<img src="images/mainlogo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-3 visible-xs">
+						<div class="cart-nav">
+							<a href="">
+								<i class="icofont icofont-cart"></i>&nbsp;<span >1</span>
+							</a>
+							<div class="cart-content">
+								<div class="media">
+								    <div class="media-left media-top">
+								      <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+								    </div>
+								    <div class="media-body">
+								      <h4 class="media-heading">product name</h4>
+								      <p>TK.350</p>
+								    </div>
+								</div>
+								<a class="btn btn-primary btn-sm" href="">View Cart</a>
+								<a class="btn btn-primary btn-sm" href="">check out</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="search-box">
+							<div class="input-group">
+						      <input type="text" class="form-control" placeholder="Search for...">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" type="submit">
+						        	<i class="icofont icofont-search"></i>
+						        </button>
+						      </span>
+						    </div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+						<div class="cart-nav">
+							<a href="">
+								<i class="icofont icofont-shopping-cart"></i>&nbsp;Cart <span >1</span>
+							</a>
+							<div class="cart-content">
+								<div class="media">
+								    <div class="media-left media-top">
+								      <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+								    </div>
+								    <div class="media-body">
+								      <h4 class="media-heading">product name</h4>
+								      <p>TK.350</p>
+								    </div>
+								</div>
+								<a class="btn btn-primary btn-sm" href="">View Cart</a>
+								<a class="btn btn-primary btn-sm" href="">check out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bw-menu hidden-xs">
+			<div class="section-content">
+				<ul>
+					<li>
+						<a>category</a>
+
+						<div class="category-menu">
+							<ul>
+								<li>
+									<a href="">category 1</a>
+									<div class="sub-category-menu">
+										<ul>
+											<li class="col-lg-3 col-md-3 col-sm-3">
+												<h5>category header</h5>
+												<ul>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+												</ul>
+											</li>
+
+											<li class="col-lg-3 col-md-3 col-sm-3">
+												<h5>category header</h5>
+												<ul>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+												</ul>
+											</li>
+
+											<li class="col-lg-3 col-md-3 col-sm-3">
+												<h5>category header</h5>
+												<ul>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+												</ul>
+											</li>
+
+											<li class="col-lg-3 col-md-3 col-sm-3">
+												<h5>category header</h5>
+												<ul>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+													<li><a href="">Sub category</a></li>
+												</ul>
+											</li>
+											
+										</ul>
+									</div>
+								</li>
+								<li><a href="">category 2</a></li>
+								<li><a href="">category 3</a></li>
+								<li><a href="">category 4</a></li>
+								<li><a href="">category 5</a></li>
+								<li><a href="">category 6</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="">new release</a></li>
+					<li><a href="">upcoming release</a></li>
+					<li><a href="">editor choice</a></li>
+					<li><a href="">treanding</a></li>
+					<li><a href="">below 50</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Header Section -->
+
+	<!-- Start Catalog Section -->
+	<div class="product-link">
+		<div class="section-content">
+			<ul class="breadcrumb">
+			  <li><a href="/"><i class="icofont icofont-home"></i></a></li>
+			  <li class="active">collection name</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="catalog">
+		<div class="section-content">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div class="filter" id="filter">
+						<h4>FILTERS</h4>
+						<div class="filter-option">
+							<div id="closebtn">
+								<a class="closebtn" onclick="closeOption()">&times;</a>
+							</div>
+							<div class="category">
+								<div class="header">
+									<a data-toggle="collapse" data-target="#category">
+										<span>categories</span>
+										<span>
+											<i class="icofont icofont-thin-up"></i>
+										</span>
+									</a>
+									
+								</div>
+								<div class="body collapse in" id="category">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">option 1</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">option 2</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">option 3</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">option 4</a> <span>(105)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="aurthor">
+								<div class="header">
+									<a data-toggle="collapse" data-target="#aurthor">
+										<span>Aurthor</span>
+										<span>
+											<i class="icofont icofont-thin-up"></i>
+										</span>
+									</a>
+								</div>
+								<div class="body collapse in" id="aurthor">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 1</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 2</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 3</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 4</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 5</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 6</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 7</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 8</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 9</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">aurthor 10</a> <span>(105)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="price">
+								<div class="header">
+									<a data-toggle="collapse" data-target="#price">
+										<span>price</span>
+										<span>
+											<i class="icofont icofont-thin-up"></i>
+										</span>
+									</a>
+								</div>
+								<div class="body collapse in" id="price">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">TK.50-100</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">TK.150-200</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">TK.250-300</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">TK.350-400</a> <span>(105)</span>
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="">
+											<a href="">TK.450-500</a> <span>(105)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="catalog-item">
+						<span>polos</span>
+
+						<div class="option-box">
+
+							<div class="filter-option-mobile visible-xs">
+								<i class="icofont icofont-filter"></i>&nbsp;
+								<a onclick="openOption()">filter</a>
+							</div>
+							<div class="sort-option">
+							  <select class="form-control" id="sort">
+							    <option>Default Sort</option>
+							    <option>New Product</option>
+							    <option>Price:High-Low</option>
+							    <option>Price:Low-High</option>
+							  </select>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="catalog-product">
+							<div class="row">
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+								
+							</div>
+
+							<!-- Second Row -->
+							<div class="row">
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									<div class="product-box">
+								    	<div class="product-photo">
+								    		<a href="">
+								    			<img class="img-responsive" src="http://www.cheshirelife.co.uk/polopoly_fs/1.1703969!/image/3949702616.JPG_gen/derivatives/landscape_225/3949702616.JPG" alt="">
+								    		</a>
+								    	</div>
+								    	<div class="product-option">
+							    			<a href="" title="Add To Cart"><i class="icofont icofont-cart-alt"></i></a>
+							    			<a href="" title="Quick View"><i class="icofont icofont-eye-alt"></i></a>
+							    		</div>
+								    	<div class="product-name">
+								    		<a href="" title="This is very nice book ">this is very nice book</a>
+								    	</div>
+								    	<div class="product-aurthor">
+								    		<span>md abu sayed</span>
+								    	</div>
+								    	<div class="product-price">
+								    		<span><s>TK.150</s></span>
+								    		<span>TK.130</span>
+								    		<span>15% OFF</span>
+								    	</div>
+								    </div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Catalog Section -->
+
+	<!-- Start Long Footer Section -->
+	<div class="long-footer">
+		<!-- Store Info and Customer Feedback-->
+		<div class="client">
+			<div class="section-content">
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+						<h2>Commodo nostrud ea dolore ullamco</h2>
+						<h4>Laborum excepteur tempor</h4>
+						<p>Ea veniam quis esse ut fugiat non dolore est labore. In quis in laboris sed ut officia eu dolore commodo mollit exercitation ad in voluptate consequat ut esse. Voluptate nulla laboris ad aliqua cillum ut occaecat laborum aliquip incididunt. Deserunt adipisicing dolor ad nostrud laborum sit magna ex commodo consectetur est et excepteur. Cillum laboris excepteur dolor dolore consectetur sed consectetur in laboris labore in eu dolor.</p>
+
+						<a href="">Read More <i class="icofont icofont-simple-right"></i></a>
+					</div>
+					
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+						<h4>Customer Speak</h4>
+
+						<div class="owl-carousel owl-theme clslider">
+
+						    <div class="customer">
+						    	<div class="photo">
+						    		<img class="img-responsive" src="https://uimg.ngfiles.com/icons/944/944799_large.png?f1504724835" alt="">
+						    		<div class="name-date">
+						    			<h5>md abu sayed</h5>
+						    			<p>17 june 2018</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="text">
+						    		<p>Ullamco velit aute enim dolore ad sit laborum ullamco duis irure sed ad officia voluptate excepteur. Fugiat veniam minim eu dolore sunt occaecat amet non pariatur incididunt sit mollit. Enim culpa adipisicing magna ullamco aliquip dolore aliqua in adipisicing ullamco veniam cupidatat ex culpa.</p>
+						    	</div>
+						    </div>
+
+						    <div class="customer">
+						    	<div class="photo">
+						    		<img class="img-responsive" src="https://uimg.ngfiles.com/icons/944/944799_large.png?f1504724835" alt="">
+						    		<div class="name-date">
+						    			<h5>md abu sayed</h5>
+						    			<p>17 june 2018</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="text">
+						    		<p>Ullamco velit aute enim dolore ad sit laborum ullamco duis irure sed ad officia voluptate excepteur. Fugiat veniam minim eu dolore sunt occaecat amet non pariatur incididunt sit mollit. Enim culpa adipisicing magna ullamco aliquip dolore aliqua in adipisicing ullamco veniam cupidatat ex culpa.</p>
+						    	</div>
+						    </div>
+
+						    <div class="customer">
+						    	<div class="photo">
+						    		<img class="img-responsive" src="https://uimg.ngfiles.com/icons/944/944799_large.png?f1504724835" alt="">
+						    		<div class="name-date">
+						    			<h5>md abu sayed</h5>
+						    			<p>17 june 2018</p>
+						    		</div>
+						    	</div>
+
+						    	<div class="text">
+						    		<p>Ullamco velit aute enim dolore ad sit laborum ullamco duis irure sed ad officia voluptate excepteur. Fugiat veniam minim eu dolore sunt occaecat amet non pariatur incididunt sit mollit. Enim culpa adipisicing magna ullamco aliquip dolore aliqua in adipisicing ullamco veniam cupidatat ex culpa.</p>
+						    	</div>
+						    </div>	
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Shopping Information -->
+		<div class="shopping-info">
+			<div class="section-content">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<h4>secure shopping</h4>
+						<img class="img-responsive" src="images/secure.png" alt="">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<h4>payment option</h4>
+						<img class="img-responsive" src="images/payment.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<h4>shipping partner</h4>
+						<img class="img-responsive" src="images/shipping-partner.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Category -->
+		<div class="footer-category">
+			<div class="section-content">
+				<a href=""><b>parent category</b></a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+				<a href="">child category</a>
+			</div>
+		</div>
+
+		<!-- Footer About Text -->
+		<div class="footer-text">
+			<div class="section-content">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<a href="">
+							<img class="img-responsive" src="images/mainlogo.png" alt="">
+						</a>
+						<p>Magna in laborum ex proident non adipisicing aliqua eu voluptate duis. Lorem ipsum est reprehenderit sed nostrud exercitation ut et nisi sint commodo officia sed voluptate in. Dolor voluptate dolore nostrud aute consectetur excepteur ut quis in officia cupidatat id et non. Non aute mollit excepteur reprehenderit sunt cillum esse commodo aliqua anim voluptate qui nisi cillum incididunt amet.</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+						<h4>information</h4>
+						<ul>
+							<li><a href="">link here</a></li>
+							<li><a href="">link here</a></li>
+							<li><a href="">link here</a></li>
+							<li><a href="">link here</a></li>
+							<li><a href="">link here</a></li>
+							<li><a href="">link here</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+						<h4>contact us</h4>
+						<p>
+							Dew Solutions Pvt Ltd <br>
+							1017, JMD Megapolis, 10th Floor <br>
+							Sohna Road, Sector 48 <br>
+							Gurgaon -122018 <br>
+							India.<br>
+							Tel: 0124 4745 777 (9 am - 8 pm Mon-Sat)<br>
+							cs@cilory.com
+						</p>
+					</div>
+				</div>
+
+				<div class="social">
+					<ul>
+						<li>
+							<a class="face" href="#"><i class="icofont icofont-social-facebook"></i></a>
+						
+							<a class="insta" href="#"><i class="icofont icofont-social-instagram"></i></a>
+						
+							<a class="twi" href="#"><i class="icofont icofont-social-twitter"></i></a>
+
+							<a class="linkin" href="#"><i class="icofont icofont-brand-linkedin"></i></a>				
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- End Long Footer Section -->
+
+	<!-- Start Footer Section -->
+	<footer>
+		<div class="section-content">
+			<p>
+				&copy; 2018 Booksworld | Powered by <a href="https://www.storrea.com/">Storrea</a>
+			</p>
+		</div>	
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- End Project Code  -->
+
+	<!-- Your Needed JavaScript Library Here -->
+
+	<!-- JQuery Core JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel Core JS -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<!-- Developer Custom JS -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- End of All JavaScript Library -->
+</body>
+</html>

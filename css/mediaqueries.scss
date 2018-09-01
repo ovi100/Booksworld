@@ -1,0 +1,211 @@
+
+$bcolor:#000;
+$wcolor:#fff;
+$gcolor:#9e9e9e;
+
+$phone-portrait: '(max-width: 320px)';
+$phone-landscape: '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+
+@mixin respond-to($device){
+	@media only screen and #{$device} {
+		@content;
+	}
+}
+
+@include respond-to($phone-landscape){}
+
+@include respond-to($phone-portrait){
+
+	.section-header{
+		h3{font-size: 15px;}
+	}
+
+	.header{
+		.middle-nav{
+			.section-content{
+				width:95%;
+
+				.mobile-menu{
+					a{
+						color: $bcolor;
+					    font-size: 20px;
+					    display: block;
+					    padding-top: 5px;
+					}
+				}
+
+				.logo{
+					img{width:155px;}
+				}
+				.cart-nav{
+				    left: -10px;
+					a:first-child{
+						border: 0;
+					    font-size: 18px;
+					    padding: 0 2px;
+					    margin-top: -5px;
+
+	    				span{
+	    					position: absolute;
+						    top: 0;
+						    left: 45px;
+	    					width: 15px;
+						    height: 15px;
+						    font-size: 12px;
+						    line-height: 15px;
+	    				}
+					}
+				}
+			}
+		}
+	}
+
+	#myCarousel{
+		.carousel-indicators {
+		    left: 85%;
+		    bottom: 0;
+		}
+	}
+
+	.add-section{
+		.col-xs-12{margin-bottom: 10px;}
+	}
+
+	.home-category{
+		.col-xs-12{margin-bottom: 10px;}
+	}
+
+	.long-footer{
+		.footer-text{
+			.text-center{
+				text-align: left;
+				p{margin-left: 0;}
+			}
+		}
+	}
+
+	// CSS For Catalog Page
+
+	.filter {
+
+		background: $wcolor;
+	    width: 0;
+	    height: 100%;
+	    position: fixed;
+	    overflow-x: hidden;
+	    top: 0;
+	    right: 0;
+	    z-index: 55;
+	    transition:all 0.4s ease;
+
+	    h4{padding-left: 10px;}
+
+		.filter-option{
+
+			#closebtn {
+				display:block;
+			}
+		}
+	}
+
+	.catalog-item {
+
+		.catalog-product{
+
+			.product-box{
+		        height: 300px;
+
+				.product-option{
+					display:block;
+					a{
+					    font-size: 15px;
+			            padding: 3px 12px;
+					}
+				}
+
+				.product-name{
+	
+				    a{
+		    	        width: 80px;
+					    font-size: 12px;
+				    }
+				}
+
+				.product-aurthor{
+				 
+				    span{font-size: 11px;}
+				}
+
+				.product-price{
+					span{
+					    font-size: 11px;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	// CSS For Product Details Page
+
+	.product-link{
+		.section-content{
+			width:100%;
+
+			.breadcrumb li + li{
+
+				a{font-size:13px;}
+
+				&:before{padding:0;}
+			}
+		}
+	}
+
+	.product-details{
+		.section-content{
+			.price-delivery{
+				.product-quantity{
+					.qty-form {
+					    width: 20%;
+					    margin-right: 5px;
+					}
+				}
+
+				.cart-button{
+					button{padding: 5px 10px;}
+				}
+			}
+		}
+
+	}
+
+	// CSS For Cart Page
+
+	.cart-info{
+		.section-content{
+			.cart-item{
+				.table{
+					tbody{
+						tr{
+							td{
+								.cart-text{display: block;}
+
+								.user-action{margin-top: 0;}
+							}
+						}
+					}
+				}
+				.total-price {
+				    width: 100%;
+				    float: right;
+				    margin-top: 0;
+				    margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
